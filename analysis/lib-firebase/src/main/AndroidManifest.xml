@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        >
+
+        <provider
+            android:name=".MyProviderForFirebase"
+            android:authorities="${applicationId}.myProviderForFirebase"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
