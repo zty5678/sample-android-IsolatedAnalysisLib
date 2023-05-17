@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
 - 引入了自定义ContentProvider，可能影响性能。解决方案：引入App Startup：https://juejin.cn/post/6844904190440013837
 
 项目的module结构:
+
 ![module-structure.png](images/module-structure.png)
 
 
@@ -72,5 +73,6 @@ class MainActivity : AppCompatActivity() {
 
 ## 参考链接
 [Configure build variants: dependencies](https://developer.android.com/build/build-variants#dependencies)
+
 [使用ContentProvider初始化三方库](https://juejin.cn/post/6844903890513575943)
 
