@@ -5,13 +5,13 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
 import android.util.Log
+import com.example.base.LogUtils
 import com.example.lib_analysis_base.AnalysisUtils
 
 class MyProviderForFirebase: ContentProvider() {
     private val TAG = "MyProviderForFirebase"
     override fun onCreate(): Boolean {
-
-        Log.d(TAG, "onCreate: ")
+        LogUtils.d(TAG, "onCreate: ")
         AnalysisUtils.instance =  FirebaseUtils()
         return true
     }

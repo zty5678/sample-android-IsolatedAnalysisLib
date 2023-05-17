@@ -5,14 +5,13 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
 import android.util.Log
+import com.example.base.LogUtils
 import com.example.lib_analysis_base.AnalysisUtils
 
 class MyProviderForUmeng: ContentProvider() {
     private val TAG = "MyProviderForUmeng"
     override fun onCreate(): Boolean {
-
-        Log.d(TAG, "onCreate: ")
-
+        LogUtils.d(TAG, "onCreate: ")
         AnalysisUtils.instance = UmengUtils()
 
         return true
